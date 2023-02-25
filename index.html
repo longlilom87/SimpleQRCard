@@ -14,6 +14,10 @@
     .attribution a { color: hsl(228, 45%, 44%); }
     body{
       background: hsl(212, 45%, 89%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .small{
    
@@ -22,13 +26,7 @@
       box-shadow:0px 20px 20px rgba(0, 0, 0, 0.1);
       padding: 15px;
       border-radius: 30px;
-      /* from here the element will be at center */
-      right: 50%;
-      bottom: 50%;
-      transform: translate(50%,50%);
-      position: absolute;
-   
- 
+
     }
     img{
       border-radius:20px;
@@ -53,8 +51,8 @@
 <body>
   
     <div class = "small">
-     <center>
-      <img src="/images/image-qr-code.png" ></img>
+      <center>
+      <img alt = "" src="/images/image-qr-code.png" ></img>
       <br>
       <h1>Improve your front-end skills by building projects</h1>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
